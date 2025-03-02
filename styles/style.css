@@ -121,12 +121,6 @@ html {
   margin-bottom: 5px;
 }
 
-.search-form__label {
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-}
-
 .search-form__textfield {
   border: none;
   border-top: 1px solid #ffffff;
@@ -139,6 +133,14 @@ html {
   color: rgba(255, 255, 255, 0.7);
   width: 255px;
   outline: none;
+  cursor: pointer;
+}
+
+.search-form__label {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  cursor: pointer;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -181,6 +183,7 @@ html {
   font-family: inherit;
   font-size: 18px;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .button:active {
