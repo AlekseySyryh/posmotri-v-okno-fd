@@ -46,6 +46,21 @@ html {
   color: #ffffff;
 }
 
+.content__card-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible .content__video-card {
+  outline: #ffffff 1px solid;
+  outline-offset: -1px;
+}
+
+
 .content__video-card-title {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -54,7 +69,7 @@ html {
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
-  margin-bottom: 6px;
+  padding-bottom: 6px;
 }
 
 .content__video-card-description {
@@ -64,6 +79,7 @@ html {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  padding-bottom: 3px;
 }
 
 .result__video-container {
@@ -74,7 +90,7 @@ html {
 
 .result__video {
   width: 100%;
-  object-fit: cover;  
+  object-fit: cover;
 }
 
 .visually-hidden {
@@ -113,7 +129,7 @@ html {
 
 .search-form__textfield {
   border: none;
-  border-top: 1px solid #ffffff;  
+  border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
   appearance: none;
   background-color: transparent;
@@ -201,6 +217,7 @@ html {
 .content__video-card {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .content__video-card-description-container {
@@ -209,6 +226,10 @@ html {
 
 .content__video-card-thumbnail {
   width: 194px;
+}
+
+.content__card-link_current .content__video-card-description-container {
+  background-color: #545050;
 }
 
 .more-button {
