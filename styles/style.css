@@ -83,6 +83,7 @@ html {
 }
 
 .result__video-container {
+  position: relative;
   width: 711px;
   min-height: 386px;
   margin-bottom: 18px;
@@ -206,6 +207,7 @@ html {
 }
 
 .content__list-container {
+  position: relative;
   margin-top: 26px;
   max-height: 298px;
   overflow-y: scroll;
