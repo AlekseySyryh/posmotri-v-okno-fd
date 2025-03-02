@@ -85,7 +85,7 @@ html {
 .result__video-container {
   position: relative;
   width: 711px;
-  min-height: 386px;
+  max-height: 386px;
   margin-bottom: 18px;
 }
 
