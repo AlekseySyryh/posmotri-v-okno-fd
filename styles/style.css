@@ -91,6 +91,7 @@ html {
   display: flex;
   justify-content: space-between;
   justify-items: stretch;
+  align-items: end;
   gap: 40px;
 }
 
@@ -121,9 +122,6 @@ html {
   line-height: 22px;
   color: rgba(255, 255, 255, 0.7);
   width: 255px;
-}
-
-.search-form__textfield {
   outline: none;
 }
 
@@ -161,6 +159,32 @@ html {
   text-underline-offset: 3px;
 }
 
+.button {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.button:focus-visible {
+  outline: 1px solid #ffffff;
+  outline-offset: -3px;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  height: 34px;
+}
 
 .content__list-container {
   margin-top: 26px;
@@ -185,6 +209,12 @@ html {
 
 .content__video-card-thumbnail {
   width: 194px;
+}
+
+.more-button {
+  margin-top: 30px;
+  height: 34px;
+  width: 100%;
 }
 
 h1,
