@@ -30,14 +30,19 @@ html {
   width: 1140px;
 }
 
+.content__details {
+  align-self: start;
+  min-height: 534px;
+}
+
 .title {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   font-size: 75px;
-  line-height: 70.5px;
+  line-height: 0.94;
 }
 
-.content__accent {
+.content__accent{
   color: #545050;
 }
 
@@ -46,6 +51,7 @@ html {
   color: #ffffff;
 }
 
+
 .content__card-link:hover {
   text-decoration: underline;
   text-underline-offset: 3px;
@@ -53,6 +59,15 @@ html {
 
 .content__card-link:focus {
   outline: none;
+}
+
+.content__card-link:active {
+  text-decoration: none;
+} 
+
+.content__card-link:active .content__video-card-description-container,
+.content__card-link_current .content__video-card-description-container {
+  background-color: #545050;
 }
 
 .content__card-link:focus-visible .content__video-card {
@@ -65,7 +80,7 @@ html {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
   font-size: 30px;
-  line-height: 30px;
+  line-height: 1;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 100%;
@@ -73,7 +88,7 @@ html {
 }
 
 .content__video-card-description {
-  line-height: 16px;
+  line-height: 0.9;
   line-clamp: 5;
   -webkit-line-clamp: 5;
   display: -webkit-box;
@@ -86,12 +101,14 @@ html {
   position: relative;
   width: 711px;
   max-height: 386px;
-  margin-bottom: 18px;
+  margin-bottom: 16px;
 }
 
 .result__video {
-  width: 100%;
-  object-fit: cover;
+  width: 711px;
+  max-height: 386px;
+  object-fit: contain;
+  object-position: center;
 }
 
 .visually-hidden {
@@ -130,7 +147,7 @@ html {
   background-color: transparent;
   font: inherit;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.2;
   color: rgba(255, 255, 255, 0.7);
   width: 225px;
   outline: none;
@@ -142,6 +159,7 @@ html {
   flex-direction: row;
   width: fit-content;
   cursor: pointer;
+  align-items: center;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -183,8 +201,10 @@ html {
   color: #ffffff;
   font-family: inherit;
   font-size: 18px;
+  font-weight: 700px;
   background-color: transparent;
   cursor: pointer;
+  height: 34px;
 }
 
 .button:active {
@@ -203,14 +223,13 @@ html {
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
 }
 
 .content__list-container {
   position: relative;
   margin-top: 26px;
   max-height: 298px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content__list {
@@ -231,15 +250,12 @@ html {
 
 .content__video-card-thumbnail {
   width: 194px;
-}
-
-.content__card-link_current .content__video-card-description-container {
-  background-color: #545050;
+  object-fit: contain;
+  object-position: center;
 }
 
 .more-button {
   margin-top: 30px;
-  height: 34px;
   width: 100%;
 }
 
